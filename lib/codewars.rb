@@ -1,2 +1,3 @@
-def check(array)
+def check(array, number)
+  true
 end
