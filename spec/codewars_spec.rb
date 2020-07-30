@@ -9,4 +9,7 @@ describe 'check' do
   it 'returns true when passed [56, 101, 34, 66, 78], 66' do
     expect(check([56, 101, 34, 56, 66, 78], 66)).to eq true
   end
+  it "returns true when passed ['t', 'y', 'e', 'u'], 'u'" do
+    expect(check(['t', 'y', 'e', 'u'], 'u')).to eq true
+  end
 end
