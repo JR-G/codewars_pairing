@@ -12,4 +12,10 @@ describe 'check' do
   it "returns true when passed ['t', 'y', 'e', 'u'], 'u'" do
     expect(check(['t', 'y', 'e', 'u'], 'u')).to eq true
   end
+  it "returns true when passed [8, 7, 5, 'bored', 'of', 'writing', 'tests', 115], 45" do
+    expect(check([8, 7, 5, "bored", "of", "writing", "tests", 115], 45)).to eq false
+  end
+  it "returns true when passed [8, 7, 5, 'bored', 'of', 'writing', 'tests', 115], 45" do
+    expect(check([8, 7, 5, "bored", "of", "writing", "tests", 115], 7)).to eq true
+  end
 end
