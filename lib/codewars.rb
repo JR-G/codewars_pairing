@@ -1,7 +1,9 @@
 def check(array, number)
-  if number == array[0] || number == array[1] 
-    true
-  else
-    false
+  array.each do |element|
+    puts element
+    if element == number
+      return true
+    end
   end
+  return false
 end
